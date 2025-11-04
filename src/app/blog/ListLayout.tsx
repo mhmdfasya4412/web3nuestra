@@ -79,7 +79,7 @@ export default function ListLayoutWith({
             Blog <IoNewspaper className="inline-block" />
           </h1>
           <p className="leading-7 text-gray-500 dark:text-gray-400">
-            This is my blog where I write about things that I find interesting.
+            The blog is still under development.
           </p>
         </div>
         <div className="flex sm:space-x-24">
