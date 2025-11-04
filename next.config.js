@@ -5,15 +5,12 @@ const { withContentlayer } = require('next-contentlayer')
 const nextConfig = {
   reactStrictMode: true,
 
-  // Ekstensi file yang didukung oleh Next.js
   pageExtensions: ['ts', 'tsx', 'js', 'jsx', 'md', 'mdx'],
 
-  // Direktori yang akan dicek oleh ESLint
   eslint: {
     dirs: ['src/app', 'src/components', 'scripts'],
   },
 
-  // Rewrites (proxy untuk backend lokal, misalnya Express atau API lain)
   async rewrites() {
     return [
       {
@@ -27,34 +24,17 @@ const nextConfig = {
     ]
   },
 
-  // Konfigurasi untuk <Image /> component
   images: {
     dangerouslyAllowSVG: true,
     remotePatterns: [
-      {
-        protocol: 'https',
-        hostname: 'images.unsplash.com',
-      },
-      {
-        protocol: 'https',
-        hostname: 'i.scdn.co',
-      },
-      {
-        protocol: 'https',
-        hostname: 'avatars.githubusercontent.com',
-      },
-      {
-        protocol: 'https',
-        hostname: 'countdemura.glitch.me',
-      },
-      {
-        protocol: 'https',
-        hostname: 'cdn.myanimelist.net',
-      },
+      { protocol: 'https', hostname: 'images.unsplash.com' },
+      { protocol: 'https', hostname: 'i.scdn.co' },
+      { protocol: 'https', hostname: 'avatars.githubusercontent.com' },
+      { protocol: 'https', hostname: 'countdemura.glitch.me' },
+      { protocol: 'https', hostname: 'cdn.myanimelist.net' },
     ],
   },
 
-  // Modifikasi konfigurasi Webpack
   webpack: (config) => {
     config.module.rules.push({
       test: /\.svg$/,
@@ -64,5 +44,4 @@ const nextConfig = {
   },
 }
 
-// Ekspor konfigurasi yang sudah dibungkus oleh Contentlayer
 module.exports = withContentlayer(nextConfig)
