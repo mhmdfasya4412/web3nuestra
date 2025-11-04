@@ -82,39 +82,6 @@ export default function ListLayoutWith({
             The blog is still under development.
           </p>
         </div>
-        <div className="flex sm:space-x-24">
-          <div>
-            <ul>
-              {displayPosts.map((post) => {
-                const { path, date, title, summary, tags } = post
-                return (
-                  <li key={path} className="py-5 hover:opacity-60">
-                    <Link
-                      href={`/${path}`}
-                      // data-umami-event="Blog-links"
-                      // data-umami-event-blog={title}
-                    >
-                      <article className="flex flex-col space-y-2 xl:space-y-0">
-                        <h2 className="text-lg font-bold leading-8 tracking-tight text-gray-900 dark:text-gray-100">
-                          {title}
-                        </h2>
-                        <dl>
-                          <dt className="sr-only">Published on</dt>
-                          <dd className="text-base font-medium text-gray-500 dark:text-gray-400">
-                            <time dateTime={date}>{formatDate(date, config.locale)}</time>
-                          </dd>
-                        </dl>
-                      </article>
-                    </Link>
-                  </li>
-                )
-              })}
-            </ul>
-            {pagination && pagination.totalPages > 1 && (
-              <Pagination currentPage={pagination.currentPage} totalPages={pagination.totalPages} />
-            )}
-          </div>
-        </div>
       </div>
     </>
   )
