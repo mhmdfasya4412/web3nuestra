@@ -61,7 +61,7 @@ export default function Footer() {
       <div className="mb-7 flex justify-center space-x-2 text-sm text-black dark:text-gray-400">
         <div>{`© ${new Date().getFullYear()}`}</div>
         <Link href="/">
-          <span className="text-black dark:text-white">VahryIskandar</span> Copyright
+          <span className="text-black dark:text-white">pxNuestra</span> Copyright
         </Link>
       </div>
     </footer>

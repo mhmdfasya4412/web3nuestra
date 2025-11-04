@@ -22,7 +22,7 @@ export default function Home() {
       <div className="items-start">
         <div className="mb-2">
           <Image
-            src={'/images/AbdulVaiz.jpg'}
+            src={'/images/MFasya.jpg'}
             alt={'count'}
             width={200}
             height={200}
@@ -31,7 +31,7 @@ export default function Home() {
           />
         </div>
         <div className="sticky mt-4 text-center">
-          <h2 className="text-2xl font-semibold">Abdul Vaiz Vahry Iskandar</h2>
+          <h2 className="text-2xl font-semibold">Muhammad "Nuestra" Fasya</h2>
         </div>
         <div className={`prose font-sans dark:prose-dark xl:col-span-2`}>
           <MDXRender code={author.body.code} components={components} />
