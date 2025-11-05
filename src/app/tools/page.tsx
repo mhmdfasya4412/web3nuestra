@@ -8,11 +8,6 @@ export default async function Tools() {
       <div className="container  py-12">
         <div className="-m-4 flex flex-wrap">
           <CardMini href="/tools/langg" description="Bahasa G Translator" title="Lang G" />
-          <CardMini
-            href="https://anime.vahry.my.id/"
-            description="MyAnimeList API wrapper"
-            title="Search Nime"
-          />
         </div>
       </div>
     </>

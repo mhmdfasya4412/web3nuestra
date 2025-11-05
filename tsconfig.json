@@ -29,7 +29,6 @@
       "@/*": [
         "./src/*"
       ],
-      "contentlayer/generated": ["./.contentlayer/generated"]
 
     }
   },
@@ -40,8 +39,6 @@
     "**/*.ts",
     "**/*.tsx",
     "**/*.json",
-    ".contentlayer/generated",
-    ".contentlayer/generated/**/*.json",
     ".next/types/**/*.ts"
   ],
   "exclude": [

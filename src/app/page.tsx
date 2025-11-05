@@ -15,14 +15,14 @@ export default async function Home() {
             "
         >
           <h1 className="tracking-tightest my-20 select-none text-6xl font-bold leading-none sm:my-10 sm:text-7xl ">
-            Abdul Vaiz Vahry Iskandar
+            Muhammad Fasya <span className="text-4xl sm:text-5xl align-middle text-black dark:text-white">a.k.a.</span> Nuestra
           </h1>
         </div>
         <div className="rounded-lg border-2 border-dotted border-gray-600 p-5 ">
           <TypedBios />
           <p className="hover text-lg leading-7 text-black dark:text-gray-400 ">
-            I am a website developer, cloud enginner, graphic designer. I learned to make a website
-            from 2019
+            I am a website developer, reverse engineer, graphic designer. I learned to make a website
+            from 2020
             {/* add link /about to see more about */}
             <Link href="/about">
               <p className="text-blue-500 hover:text-blue-700">Click here to read more about me</p>

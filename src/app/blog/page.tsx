@@ -1,14 +1,17 @@
 import ListLayout from './ListLayout'
-import { allCoreContent, sortPosts } from '@/lib/utils'
-import { allBlogs } from 'contentlayer/generated'
+// import { allCoreContent, sortPosts } from '@/lib/utils' // opsional, bisa hapus sementara
+// import { allBlogs } from 'contentlayer/generated' // dihapus
 import { genPageMetadata } from '../seo'
 
 const POSTS_PER_PAGE = 5
 
 export const metadata = genPageMetadata({ title: 'Blog' })
 
+// sementara blog kosong karena Contentlayer dihapus
+const allBlogs = []
+
 export default function BlogPage() {
-  const posts = allCoreContent(sortPosts(allBlogs))
+  const posts = allBlogs // bisa ganti dengan sortPosts(allBlogs) kalau utils tetap ada
   const pageNumber = 1
   const initialDisplayPosts = posts.slice(
     POSTS_PER_PAGE * (pageNumber - 1),
@@ -20,13 +23,8 @@ export default function BlogPage() {
   }
 
   return (
-    <>
-      <ListLayout
-        posts={posts}
-        initialDisplayPosts={initialDisplayPosts}
-        pagination={pagination}
-        title="All Posts"
-      />
-    </>
+    <ListLayout
+      title="Blog"
+    />
   )
 }

@@ -1,46 +1,15 @@
 const projectsData = [
   {
-    title: 'AniSearch',
-    description: 'AniSearch is a simple and easy to use Anime Search Engine.',
-    imgSrc: '/images/project/anime.png',
-    href: 'https://anime.vahry.my.id/',
-  },
-  {
-    title: 'Technopark Website',
-    description: 'Technopark Website for SMKN 1 Kota Bengkulu, Indonesia',
-    imgSrc: '/images/project/tepa.png',
-    href: 'http://tepasystem.rf.gd/',
-  },
-  {
-    title: 'ARGA Game Engine',
-    description: 'ARGA Game Engine is a text based game engine',
-    imgSrc: '/images/project/arga.png',
-    href: 'https://github.com/DemuraAIdev/ARGA',
-  },
-  {
-    title: 'School Suite',
-    description: 'School Suite is management school system',
-    imgSrc: '/images/project/image.png',
-    href: 'https://schoolsuite.id/',
-  },
-  {
-    title: 'Dencrypt',
-    description: `Dencrypt is a simple, easy to use, and secure file encryption tool.`,
+    title: 'Nuev Whatsapp Bot',
+    description: 'A multi-device WhatsApp bot with various features such as games, fun, and more.',
     imgSrc: '',
-    href: 'https://github.com/DemuraAIdev/dencrypt',
+    href: 'https://github.com/pxNuestra/nuev-wabot',
   },
   {
-    title: 'ZERON (Discontinue)',
-    description: `Open Source DIscord Bot, Rich feel, customizable, and easy to use.`,
-    imgSrc: '/images/project/zeron.png',
-    href: 'https://github.com/DemuraAIdev/ZERON',
-    discontinued: true,
-  },
-  {
-    title: 'DRM (Discontinue)',
-    description: `Mini PHP Framework, easy to use, and secure.`,
+    title: 'Nuestra Store (Discontinue)',
+    description: `An e-commerce website built with Laravel and Tailwind CSS.`,
     imgSrc: '',
-    href: 'https://github.com/DemuraAIdev/drm_framework',
+    href: 'https://github.com/pxNuestra/nuestraStore',
     discontinued: true,
   },
 ]

@@ -1,8 +1,8 @@
 const config = {
-  title: 'Vahry Iskandar',
-  author: 'Vahry Iskandar',
-  description: 'This is Vahry Iskandar personal website',
-  siteURL: 'https://vahry.my.id/',
+  title: 'Muhammad F. Nuestra',
+  author: 'Muhammad F. Nuestra',
+  description: 'This is Muhammad F. Nuestra personal website',
+  siteURL: 'https://nuestra.xd/',
   language: 'en-us',
   email: 'cyberaioff@gmail.com',
   locale: 'en-US',

@@ -1,7 +1,9 @@
 {
-  "name": "deweb3",
+"name": "deweb3",
   "version": "0.1.0",
   "private": true,
+  "type": "module",
+  "engines": { "node": ">=18" },
   "scripts": {
     "dev": "next dev",
     "build": "next build && node scripts/postbuild.mjs",
@@ -21,7 +23,6 @@
     "@vercel/analytics": "^1.3.1",
     "@vercel/edge-config": "^0.4.1",
     "@vercel/speed-insights": "^1.0.11",
-    "contentlayer": "^0.3.4",
     "date-fns": "^2.30.0",
     "geist": "^1.3.0",
     "github-slugger": "^2.0.0",
@@ -30,7 +31,6 @@
     "mdast-util-to-string": "^4.0.0",
     "next": "14.0.4",
     "next-auth": "5.0.0-beta.4",
-    "next-contentlayer": "^0.3.4",
     "next-themes": "^0.2.1",
     "nextjs-toploader": "^1.6.12",
     "probe-image-size": "^7.2.3",
@@ -76,11 +76,12 @@
     "tailwindcss": "^3.4.3",
     "typescript": "^5.4.5"
   },
+
   "lint-staged": {
     "*.+(js|jsx|ts|tsx)": [
       "eslint --fix"
     ],
-    "*.+(js|jsx|ts|tsx|json|css|md|mdx)": [
+    "*.+(js|jsx|ts|tsx|json|css|md)": [
       "prettier --write"
     ]
   },
