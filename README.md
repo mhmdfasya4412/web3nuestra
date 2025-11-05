@@ -4,7 +4,6 @@ pxweb3 adalah website pribadi saya, yang mana di website ini terdapat blog, gues
 ### Alat yang saya gunakan adalah
 - NextJS
 - Prisma
-- Contentlayer
 - vercel
 - postgressql
 - TailwindCSS
